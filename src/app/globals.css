@@ -1,21 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Estilos generales para transición */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema claro */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Tema oscuro */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Botón de cambio de tema */
+.theme-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.light .theme-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark .theme-button {
+    background-color: #fff;
+    color: #000;
 }
