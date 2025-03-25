@@ -1,6 +1,6 @@
 'use client';
 
-import  { createContext, useState, useRef } from 'react';
+import  { createContext, useState } from 'react';
 
 // 1 Creamos el contexto
 export const SettingsContext = createContext();
